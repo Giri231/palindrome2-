@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int isPalindrome(char inputStr[],int length  )
+{
+    int v ,i=0;
+    v=length-1;
+    while(i<=v)
+    {
+        if(inputStr[i+1]==inputStr[v-1])
+        {
+            return 1;
+            i++;
+        }
+    else
+    return 0;
+    }
+}
+
+int main()
+{
+    int length ;
+    cin>>length;
+   char inputStr[length];
+    cin>>inputStr;
+    cout<<isPalindrome(inputStr,length);
+    return 0;
+}
